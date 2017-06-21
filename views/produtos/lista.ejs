@@ -1,0 +1,40 @@
+<% include ../includes/header.ejs %>
+
+    <!-- FINAL NAV -->
+    <div>
+        <div class ="container min-container">
+            <h2 class="basic-title">Listagem de livros</h2>
+            <div class="well">
+                <table class="table table-condensed table-bordered table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <td><a href="">Título</a></td>
+                        <td><a href="">Preço</a></td>
+                        <td><a href="">Descrição</a></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <% lista.forEach((item) => { %>
+                        <tr>
+                            <td><%= item.titulo%></td>
+                            <td><%= item.preco%></td>
+                            <td><p><%= item.descricao%></p></td>
+                        </tr>
+                        <% })%>
+
+<!--
+                        <%for(var i=0; i<lista.length; i++) {%>
+                          <tr>
+                            <td><%= lista[i].titulo%></td>
+                            <td><%= lista[i].preco%></td>
+                            <td><%= lista[i].descricao%></td>
+                          </tr>
+                        <%}%>
+                      -->
+                    </tbody>
+                </table>
+                <a href="/produtos/form" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> Novo livro</a>
+            </div>
+        </div>
+    </div>
+<% include ../includes/footer.ejs %>

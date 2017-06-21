@@ -1,0 +1,26 @@
+{
+  "name": "casadocodigo",
+  "version": "1.0.0",
+  "description": "casadocodigo, itau",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node node_modules/mocha/bin/mocha --recursive",
+    "dev": "node node_modules/nodemon/bin/nodemon.js server.js"
+  },
+  "author": "Agabes Miguel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-load": "^1.1.16",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  }
+}
